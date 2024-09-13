@@ -20,9 +20,6 @@
 //!    assert_eq!(en_stemmer.stem("fruitlessly"), "fruitless");
 //! }
 //! ```
-extern crate serde;
-#[macro_use]
-extern crate serde_derive;
 
 use std::borrow::Cow;
 
@@ -33,7 +30,7 @@ use snowball::algorithms;
 
 /// Enum of all supported algorithms.
 /// Check the [Snowball-Website](https://snowballstem.org/) for details.
-#[derive(Debug, Serialize, Deserialize, Eq, PartialEq, Copy, Clone)]
+#[derive(Debug, Eq, PartialEq, Copy, Clone)]
 pub enum Algorithm {
     Arabic,
     Armenian,

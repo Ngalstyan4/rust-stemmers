@@ -9,5 +9,3 @@ keywords = ["nlp", "stemming", "information", "retrieval", "language"]
 license = "MIT/BSD-3-Clause"
 
 [dependencies]
-serde = "^1.0"
-serde_derive = "^1.0"
